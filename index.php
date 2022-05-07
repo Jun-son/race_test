@@ -10,7 +10,7 @@
 	<?php
 		include 'styles/style.css';
 		include 'membersTable.php';
-		include 'check-inList.php';
+		include 'resultsTable.php';
 	?>
 
 </body>
