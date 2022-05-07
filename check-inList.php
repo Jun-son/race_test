@@ -1,12 +1,12 @@
 <?php
 	
-	$dataCars = file_get_contents("data_cars.json");
+	$dataCars = file_get_contents("data/data_cars.json");
 	$decodeCars = json_decode($dataCars, true); //декодированный массив таблицы
 	$arrayCountCars = count($decodeCars); //кол-во участников
 	$parentKeyCars = array_keys(json_decode($dataCars, true)); //ключ родительского класса
 
 
-	$dataAttempts = file_get_contents("data_attempts.json");
+	$dataAttempts = file_get_contents("data/data_attempts.json");
 	$decodeAttempts = json_decode($dataAttempts, true); //декодированный массив таблицы
 	$arrayCountAttempts = count($decodeAttempts); //кол-во заездов
 	$parentKeyAttempts = array_keys(json_decode($dataAttempts, true)); //ключ родительского класса

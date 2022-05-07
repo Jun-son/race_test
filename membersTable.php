@@ -1,5 +1,5 @@
 <?php
-	$dataCars = file_get_contents("data_cars.json");
+	$dataCars = file_get_contents("data/data_cars.json");
 	$decodeCars = json_decode($dataCars, true); //декодированный массив таблицы
 	$arrayCountCars = count($decodeCars); //кол-во участников
 	$parentKeyCars = array_keys(json_decode($dataCars, true)); //ключ родительского класса
